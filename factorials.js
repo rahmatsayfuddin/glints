@@ -3,11 +3,11 @@ alert("1. FACTORIALS");
 console.log("1. FACTORIALS");
 var N = prompt("Input Factorial: ");//get input from user
 //init function
-function factorial_1(N) {
+function factorial(N) {
 	if (N == 0) {
 		return 1;
 	}
-	return toFix(N * factorial_1(N - 1)); //tofix is to avoid scientific notation for large numbers
+	return toFix(N * factorial(N - 1)); //tofix is to avoid scientific notation for large numbers
 }
 function toFix(i){
 	var str='';
